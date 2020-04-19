@@ -1,0 +1,30 @@
+h3 {
+  margin-left: 40%;
+}
+
+form {
+  margin-left: 40%;
+}
+
+span {
+  color: red;
+}
+
+#weather {
+  display: flex;
+  flex-direction: row;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 30em;
+}
+
+.day img {
+  height: 10em;
+  width: 10em;
+}

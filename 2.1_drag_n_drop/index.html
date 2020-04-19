@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>My character !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <img src="paladin.png" alt="">
+    <article>
+        <h1>My character : <span id="name"></span></h1>
+        <h2>Class : <span id="race"></span></h1>
+
+        <p>Lifepoints : <span class="hp"></span>HP</p>
+        <p class="mana">Mana : <span></span>mana</p>
+        <p>Damages : <b></b>dmg</p>
+    </article>
+
+    <hr>
+
+    <h3>New stats</h3>
+    <form>
+        <input type="text" id="nameForm" name="name" placeholder="name"><br>
+        <input type="text" id="raceForm" name="race" placeholder="race"><br>
+        <input type="text" id="hpForm" name="hp" placeholder="hp"><br>
+        <input type="text" id="manaForm" name="mana" placeholder="mana"><br>
+        <input type="text" id="attackForm" name="attack" placeholder="attack"><br><br>
+        <input type="submit" id="submit" value="Submit">
+    </form> 
+
+    <script src="index.js"></script>
+</body>
+</html>
