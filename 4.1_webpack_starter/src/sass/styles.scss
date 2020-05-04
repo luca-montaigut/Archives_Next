@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-image: url("../images/cat.jpg");
+}
+
+@font-face {
+  font-family: "Cheese Cookies";
+  src: url("../fonts/cheese_cookies.ttf");
+}
+
+p {
+  color: $red;
+  font-family: "Cheese Cookies";
+}
