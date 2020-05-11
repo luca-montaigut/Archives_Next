@@ -14,8 +14,12 @@ class Clients extends React.Component {
       clientList.push(data);
     }
 
-    let clients = clientList.map((client) => (
-      <Client firstName={client.firstName} lastName={client.lastName} />
+    let clients = clientList.map((client, index) => (
+      <Client
+        key={client.firstName + client.lastName + index}
+        firstName={client.firstName}
+        lastName={client.lastName}
+      />
     ));
 
     return (
