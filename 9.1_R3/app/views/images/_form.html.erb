@@ -1,0 +1,30 @@
+<%= form_with(model: image, local: true) do |form| %>
+  <% if image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(image.errors.count, "error") %> prohibited this image from being saved:</h2>
+
+      <ul>
+        <% image.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= form.file_field :picture %>
+
+  <br><br>
+
+  <%= form.text_field :description, placeholder: "Description", required: true %>
+
+   <br><br>
+  <%= form.label :vegan, "Private ? (by default your image is public)" %>
+  <%= form.check_box :private_img %>
+   
+   <br><br>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

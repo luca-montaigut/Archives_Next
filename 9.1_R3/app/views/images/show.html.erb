@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Votre image</h1>
+
+<p>id : <%=@image.id%></p>
+<%if @image.picture.attached?%>
+<h3>Preview</h3>
+<p>extension : <%=@image.extension%></p>
+  <%= image_tag @image.picture, alt: 'image' %>
+<%else%>
+  <p>=== Il n'y a pas encore d'image liée ===</p>
+<%end%>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
